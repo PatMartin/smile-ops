@@ -51,7 +51,7 @@ import smile.math.distance.SparseEuclideanDistance;
 import smile.math.distance.SparseManhattanDistance;
 
 @AutoService(Op.class)
-@Command(name = "smile:cluster", description = "Identify clustered data.")
+@Command(name = "smile-cluster", description = "Identify clustered data.")
 public class Cluster extends BaseOp<Cluster>
 {
   public enum DistanceType {
@@ -209,7 +209,7 @@ public class Cluster extends BaseOp<Cluster>
 
   public Cluster()
   {
-    super("smile:cluster");
+    super("smile-cluster");
   }
 
   public List<OpData> execute(OpData input) throws OpsException
